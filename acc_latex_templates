@@ -6,12 +6,16 @@
 # Please see https://github.com/qcr/latex_templates for full details on how
 # things work, and instructions on how to add your own templates. The more
 # templates the merrier!
+# 
+# Developed by: J. Mount, j.mount@qut.edu.au
+# Updated by: D. Gunasinghe, dasun.gunasinghe@qut.edu.au
+# Last updated: 10-January-2023
 
 ################################################################################
 ############################### Global settings ################################
 ################################################################################
 
-TMP_LOCATION="/tmp/qcr_latex_templates"
+TMP_LOCATION="/tmp/acc_latex_templates"
 
 
 SOURCE_LOCATION="$([ -z "${LOCAL_LOCATION:-}" ] && echo "$TMP_LOCATION" \
@@ -32,7 +36,7 @@ fi
 heading "Getting latest templates"
 if [ -d "$TMP_LOCATION" ]; then rm -rf "$TMP_LOCATION"; fi
 mkdir -p "$TMP_LOCATION"
-git clone --depth 1 -b main https://github.com/qcr/latex-templates \
+git clone --depth 1 -b main https://github.com/AustralianCoboticsCentre/latex-templates \
   "$TMP_LOCATION"
 printf "Done\n"
 
