@@ -1,8 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   LaTeX source code for a simple technical note
 % 	Developed by: J. Mount, j.mount@qut.edu.au
-%   Updated by:
-%	Last updated: 15-September-2022
+%   Updated by: D. Gunasinghe, dasun.gunasinghe@qut.edu.au
+%	Last updated: 10-January-2023
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% PRE-AMBLE %%%
@@ -38,7 +38,7 @@
 \begin{document}
 
     %%% TITLE PAGE %%%
-    \input{title.tex}
+    \input{Sections/title}
 
     %%% CUSTOM HEADERS & FOOTERS %%%
     \pagestyle{fancy}
@@ -50,8 +50,7 @@
     \fancyfoot[C]{\thepage}
 
     %%% SECTIONS %%%
-    \section*{Section X}
-    \lipsum[2-4]
+    \input{Sections/introduction}
 
     \section*{Section Y}
     \lipsum[3-6]
